@@ -1,0 +1,98 @@
+// .portfolio {
+
+//     &__main-title {
+//         display: none;
+//     }
+// }
+
+// .filter {
+//     display: flex;
+//     justify-content: center;
+//     margin: 0px 0px 50px 0px;
+
+//     &__item:not(:last-child){
+//         margin-right: 8px;
+//     }
+// }
+
+// .cards-set {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 0;
+//     grid-gap: 30px;
+// }
+
+// .card {
+//     display: flex;
+//     transition-property: box-shadow, height;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     flex-direction: column;
+
+//     &:hover {
+//         cursor: pointer;
+//         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+//         0px 4px 4px rgba(0, 0, 0, 0.06),
+//         1px 4px 6px rgba(0, 0, 0, 0.16);
+//         }
+
+//     &__thumb {
+//         position: relative;
+//     }
+
+//     &__img {
+//         display: block;
+//     }
+
+//     &__overlay {
+//         display: flex;
+//         transition-property: height;
+//         transition-duration: 250ms;
+//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//         position: absolute;
+//         overflow: hidden;
+//         font-family: 'Roboto';
+//         font-weight: 400;
+//         font-size: 18px;
+//         line-height: 1.56;
+//         letter-spacing: 0.03em;
+//         bottom: 0;
+//         width: 100%;
+//         height: 0;
+//         padding: 0px 24px 0px 24px;
+//         color: var(--third-text-color);
+//         background-color: rgba(33, 150, 243, 0.9);
+//         align-items: center;
+//     }
+
+//     &:hover &__overlay {
+//         height: 294px;
+//     }
+
+//     &__footer {
+//         flex-direction: column;
+//         padding: 20px 24px;
+//         border-left: 1px solid #EEEEEE;
+//         border-right: 1px solid #EEEEEE;
+//         border-bottom: 1px solid #EEEEEE;
+//     }
+
+//     &__title {
+//         font-weight: 700;
+//         font-size: 18px;
+//         line-height: 2;
+//         letter-spacing: 0.06em;
+//         margin-bottom: 4px;
+//         text-align: left;
+//     }
+
+//     &__text {
+//         color: var(--secondary-text-color);
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 1.875;
+//         letter-spacing: 0.03em;
+//         margin: 0;
+
+//     }
+// }
