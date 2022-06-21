@@ -45,9 +45,24 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0px 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 a {
@@ -65,8 +80,7 @@ a {
   font-size: 26px;
   line-height: 1.19;
   font-style: normal;
-  margin-right: 93px;
-  padding: 0px;
+  display: inline-block;
 }
 .logo__elem--color {
   color: var(--accent-color);
@@ -78,59 +92,33 @@ a {
 
 .page-header {
   display: flex;
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding: 24px 15px 25px 15px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
 }
 
 .nav {
-  display: flex;
+  display: inline-block;
 }
-.nav__links {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-.nav__elem:not(:last-child) {
-  margin-right: 50px;
-}
-.nav__link {
-  color: var(--primary-text-color);
+.nav__site {
+  display: none;
 }
 .nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
 }
 .nav__link--current {
-  position: relative;
   color: var(--accent-color);
 }
-.nav__link--current::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  left: 0;
-  bottom: -33.2px;
-  background-color: var(--accent-color);
+.nav__button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .contacts {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-.contacts__item {
-  display: flex;
-  color: var(--secondary-text-color);
-  fill: var(--secondary-text-color);
-  margin-left: 30px;
-  align-items: center;
+  display: none;
 }
 .contacts__item:hover, .contacts__item:focus {
   color: var(--accent-color);
