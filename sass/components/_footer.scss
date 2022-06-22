@@ -1,0 +1,136 @@
+.footer {
+    background-color: var(--background-2-color);
+
+    &__wrapper {
+        padding: 60px 15px;
+        text-align: center;
+    }
+
+    &__nav-logo {
+        display: block;
+        color: var(--third-text-color);
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    &__address {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    &__nav {
+        margin-bottom: 60px;
+    }
+
+    &__nav-contacts {
+        margin: 0;
+    }
+
+    &__nav-contact {
+        display: block;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__nav-contact:not(:first-child) {
+        margin: 8px 0 0 0;
+    }
+
+    &__nav-link {
+        color: var(--third-text-color);
+    }
+
+    &__nav-mail,
+    &__nav-phone {
+        color: rgba(255, 255, 255, 0.6)
+    }
+
+    &__nav-link:hover,
+    &__nav-link:focus,
+    &__nav-mail:hover,
+    &__nav-mail:focus,
+    &__nav-phone:hover,
+    &__nav-phone:focus {
+        color: var(--accent-color);
+    }
+
+}
+
+.invite-block {
+    margin-bottom: 60px;
+
+    &__main-title {
+        color: var(--third-text-color);
+        margin-bottom: 20px;
+    }
+
+    &__social-list {
+        margin: 0 auto;
+    }
+}
+
+.subscribe {
+
+    &__lable {
+        color: var(--third-text-color);
+        display: inline-block;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin: 0px 0px 20px 0px;
+    }
+
+    &__form {
+        
+    }
+
+    &__input {
+        width: 100%;
+        height: 50px;
+        padding: 15px 16px;
+        background-color: var(--background-2-color);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 20px;
+    }
+
+    &__input:focus {
+        outline: none;
+        border: 1px solid var(--accent-color);
+    }
+
+    &__button {
+        display: flex;
+        height: 50px;
+        min-width: 200px;
+        background-color: var(--accent-color);
+        color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        margin: 0 auto;
+    }
+
+    &__button:hover {
+        background-color: var(--accent-2-color);
+    }
+
+    &__button-title {
+        margin: 0;
+        margin-right: 10px;
+    }
+}
