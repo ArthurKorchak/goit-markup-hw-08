@@ -133,9 +133,9 @@ a {
 }
 
 .nav {
-  display: inline-block;
   transform: translateY(-100%);
   position: absolute;
+  visibility: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -145,9 +145,11 @@ a {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.12);
 }
 .nav.is-open {
   transform: translateY(0%);
+  visibility: visible;
 }
 .nav__site {
   margin-bottom: calc(100vh - 487px);
