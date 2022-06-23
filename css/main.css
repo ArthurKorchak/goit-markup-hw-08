@@ -134,8 +134,7 @@ a {
 
 .nav {
   display: inline-block;
-  display: none;
-  z-index: 2;
+  transform: translateY(-100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -143,9 +142,13 @@ a {
   height: 100%;
   background-color: var(--background-color);
   padding: 48px 0px 0px 40px;
+  z-index: 2;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav.is-open {
-  display: inline-block;
+  transform: translateY(0%);
 }
 .nav__site {
   margin-bottom: calc(100vh - 487px);
@@ -552,6 +555,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 4;
   background-color: rgba(0, 0, 0, 0.2);
   transition-property: opacity, visibility;
   transition-duration: 250ms;
@@ -564,8 +568,7 @@ a {
 }
 .backdrop__modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: calc(100% - 30px);
   padding: 40px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -577,7 +580,7 @@ a {
 .backdrop__main-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-align: center;
@@ -653,7 +656,7 @@ a {
   border: 0;
 }
 .backdrop__checkbox-icon-0 {
-  width: 16px;
+  width: 15px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
@@ -673,8 +676,8 @@ a {
 }
 .backdrop__user-agr-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   margin-left: 7px;
   color: var(--secondary-text-color);
@@ -697,6 +700,9 @@ a {
   letter-spacing: 0.06em;
 }
 .backdrop__btn-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   transition-property: fill, background-color;
   transition-duration: 250ms;
@@ -706,8 +712,8 @@ a {
   height: 28px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 14px;
-  right: 8.5px;
-  top: 8.5px;
+  right: 8px;
+  top: 8px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
