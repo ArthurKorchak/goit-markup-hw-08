@@ -126,7 +126,21 @@
                 <h2 class="team__main-title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="teammate">
-                        <img class="teammate__photo" src="./images/team-01.jpg" alt="Участник команды №1">
+                        <picture>
+                            <source srcset="
+                                ./images/team-01.jpg 1x,
+                                ./images/team-01.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/tablet/team-01-x1.jpg 1x,
+                                ./images/tablet/team-01-x2.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <img class="teammate__photo"
+                                srcset="
+                                ./images/mobile/team-01-x1.jpg 1x,
+                                ./images/mobile/team-01-x2.jpg 2x
+                                " src="./images/mobile/team-01-x1.jpg" alt="Участник команды №1" />
+                        </picture>
                         <div class="teammate__descript">
                             <h3 class="teammate__name">Игорь Демьяненко</h3>
                             <p class="teammate__position">Product Designer</p>
@@ -163,7 +177,20 @@
                         </ul>
                     </li>
                     <li class="teammate">
-                        <img class="teammate__photo" src="./images/team-02.jpg" alt="Участник команды №2">
+                        <picture>
+                            <source srcset="
+                                ./images/team-02.jpg 1x,
+                                ./images/team-02.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/tablet/team-02-x1.jpg 1x,
+                                ./images/tablet/team-02-x2.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <img class="teammate__photo" srcset="
+                                ./images/mobile/team-02-x1.jpg 1x,
+                                ./images/mobile/team-02-x2.jpg 2x
+                                " src="./images/mobile/team-02-x1.jpg" alt="Участник команды №2" />
+                        </picture>
                         <div class="teammate__descript">
                             <h3 class="teammate__name">Ольга Репина</h3>
                             <p class="teammate__position">Frontend Developer</p>
@@ -200,7 +227,20 @@
                         </ul>
                     </li>
                     <li class="teammate">
-                        <img class="teammate__photo" src="./images/team-03.jpg" alt="Участник команды №3">
+                        <picture>
+                            <source srcset="
+                                ./images/team-03.jpg 1x,
+                                ./images/team-03.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/tablet/team-03-x1.jpg 1x,
+                                ./images/tablet/team-03-x2.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <img class="teammate__photo" srcset="
+                                ./images/mobile/team-03-x1.jpg 1x,
+                                ./images/mobile/team-03-x2.jpg 2x
+                                " src="./images/mobile/team-03-x1.jpg" alt="Участник команды №3" />
+                        </picture>
                         <div class="teammate__descript">
                             <h3 class="teammate__name">Николай Тарасов</h3>
                             <p class="teammate__position">Marketing</p>
@@ -237,7 +277,20 @@
                         </ul>
                     </li>
                     <li class="teammate">
-                        <img class="teammate__photo" src="./images/team-04.jpg" alt="Участник команды №4">
+                        <picture>
+                            <source srcset="
+                                ./images/team-04.jpg 1x,
+                                ./images/team-04.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/tablet/team-04-x1.jpg 1x,
+                                ./images/tablet/team-04-x2.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <img class="teammate__photo" srcset="
+                                ./images/mobile/team-04-x1.jpg 1x,
+                                ./images/mobile/team-04-x2.jpg 2x
+                                " src="./images/mobile/team-04-x1.jpg" alt="Участник команды №4" />
+                        </picture>
                         <div class="teammate__descript">
                             <h3 class="teammate__name">Михаил Ермаков</h3>
                             <p class="teammate__position">UI Designer</p>

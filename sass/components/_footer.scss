@@ -4,6 +4,13 @@
     &__wrapper {
         padding: 60px 15px;
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 60px 89px 60px 76px;
+        }
     }
 
     &__nav-logo {
@@ -63,6 +70,10 @@
 .invite-block {
     margin-bottom: 60px;
 
+    @media screen and (min-width: 768px) {
+        margin-top: 5px;
+    }
+
     &__main-title {
         color: var(--third-text-color);
         margin-bottom: 20px;
@@ -74,6 +85,7 @@
 }
 
 .subscribe {
+    margin: 0 auto;
 
     &__lable {
         color: var(--third-text-color);
@@ -103,6 +115,10 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
         margin-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
     }
 
     &__input:focus {

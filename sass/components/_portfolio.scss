@@ -8,14 +8,27 @@
 .filter {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 0px 25px 0px;
+    margin: 0;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
 
     &__item:not(:last-child) {
         margin: 0px 8px 15px 0px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
     }
 }
 
 .cards-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     margin: 0;
 }
 
@@ -24,9 +37,17 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
     }
+    
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
+
+    // &:not(:last-child) {
+    //     margin-bottom: 30px;
+    // }
 
     &:hover {
         cursor: pointer;
@@ -42,6 +63,15 @@
     &__img {
         display: block;
         max-width: 100%;
+        width: inherit;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+        }
     }
 
     &__overlay {
