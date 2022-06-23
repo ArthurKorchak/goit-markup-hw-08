@@ -11,6 +11,10 @@
             justify-content: space-between;
             padding: 60px 89px 60px 76px;
         }
+
+        @media screen and (min-width: 1200px) {
+            padding: 60px 15px;
+        }
     }
 
     &__nav-logo {
@@ -18,6 +22,10 @@
         color: var(--third-text-color);
         margin: 0;
         margin-bottom: 20px;
+
+        @media screen and (min-width: 1200px) {
+            display: inline-block;
+        }
     }
 
     &__address {
@@ -30,6 +38,11 @@
 
     &__nav {
         margin-bottom: 60px;
+
+        @media screen and (min-width: 1200px) {
+            margin: 0 auto 0 0;
+            text-align: left;
+        }
     }
 
     &__nav-contacts {
@@ -45,6 +58,10 @@
 
     &__nav-contact:not(:first-child) {
         margin: 8px 0 0 0;
+
+        @media screen and (min-width: 1200px) {
+            margin: 9px 0 0 0;
+        }
     }
 
     &__nav-link {
@@ -74,9 +91,18 @@
         margin-top: 5px;
     }
 
+    @media screen and (min-width: 1200px) {
+        padding: 12px 0px 0px 0px;
+        margin: 0;
+    }
+
     &__main-title {
         color: var(--third-text-color);
         margin-bottom: 20px;
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
     }
 
     &__social-list {
@@ -87,6 +113,11 @@
 .subscribe {
     margin: 0 auto;
 
+    @media screen and (min-width: 1200px) {
+        padding: 12px 0px 0px 0px;
+        margin: 0 0 0 93px;
+    }
+
     &__lable {
         color: var(--third-text-color);
         display: inline-block;
@@ -96,10 +127,18 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin: 0px 0px 20px 0px;
+
+        @media screen and (min-width: 1200px) {
+            display: block;
+            text-align: left;
+        }
     }
 
     &__form {
-        
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
     }
 
     &__input {
@@ -118,6 +157,11 @@
 
         @media screen and (min-width: 768px) {
             width: 450px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+            margin: 0;
         }
     }
 
@@ -139,6 +183,10 @@
         line-height: 1.875;
         letter-spacing: 0.06em;
         margin: 0 auto;
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 12px;
+        }
     }
 
     &__button:hover {

@@ -162,7 +162,6 @@
 
     @media screen and (min-width: 1200px) {
         flex-direction: row;
-        margin: 0;
     }
 
     &__item {
@@ -255,10 +254,6 @@
     &__icon:hover,
     &__icon:focus {
         fill: var(--accent-color);
-    }
-
-    &__menu-icon {
-
     }
     
     &__cross-icon {

@@ -293,7 +293,6 @@ a {
 @media screen and (min-width: 1200px) {
   .contacts {
     flex-direction: row;
-    margin: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -555,7 +554,7 @@ a {
     max-width: 354px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .teammate {
     padding-bottom: 30px;
     max-width: 270px;
@@ -621,6 +620,11 @@ a {
 .our-clients__main-title {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .our-clients__main-title {
+    margin-bottom: 50px;
+  }
+}
 .our-clients__list {
   display: flex;
   flex-wrap: wrap;
@@ -632,6 +636,11 @@ a {
 @media screen and (min-width: 768px) {
   .our-clients__item {
     width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-clients__item {
+    width: calc((100% - 150px) / 6);
   }
 }
 .our-clients__link {
@@ -668,11 +677,21 @@ a {
     padding: 60px 89px 60px 76px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    padding: 60px 15px;
+  }
+}
 .footer__nav-logo {
   display: block;
   color: var(--third-text-color);
   margin: 0;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__nav-logo {
+    display: inline-block;
+  }
 }
 .footer__address {
   font-style: normal;
@@ -683,6 +702,12 @@ a {
 }
 .footer__nav {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__nav {
+    margin: 0 auto 0 0;
+    text-align: left;
+  }
 }
 .footer__nav-contacts {
   margin: 0;
@@ -695,6 +720,11 @@ a {
 }
 .footer__nav-contact:not(:first-child) {
   margin: 8px 0 0 0;
+}
+@media screen and (min-width: 1200px) {
+  .footer__nav-contact:not(:first-child) {
+    margin: 9px 0 0 0;
+  }
 }
 .footer__nav-link {
   color: var(--third-text-color);
@@ -714,9 +744,20 @@ a {
     margin-top: 5px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .invite-block {
+    padding: 12px 0px 0px 0px;
+    margin: 0;
+  }
+}
 .invite-block__main-title {
   color: var(--third-text-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .invite-block__main-title {
+    text-align: left;
+  }
 }
 .invite-block__social-list {
   margin: 0 auto;
@@ -724,6 +765,12 @@ a {
 
 .subscribe {
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    padding: 12px 0px 0px 0px;
+    margin: 0 0 0 93px;
+  }
 }
 .subscribe__lable {
   color: var(--third-text-color);
@@ -734,6 +781,17 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0px 0px 20px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__lable {
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    display: flex;
+  }
 }
 .subscribe__input {
   width: 100%;
@@ -754,6 +812,12 @@ a {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+    margin: 0;
+  }
+}
 .subscribe__input:focus {
   outline: none;
   border: 1px solid var(--accent-color);
@@ -771,6 +835,11 @@ a {
   line-height: 1.875;
   letter-spacing: 0.06em;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__button {
+    margin-left: 12px;
+  }
 }
 .subscribe__button:hover {
   background-color: var(--accent-2-color);
@@ -813,9 +882,9 @@ a {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .backdrop__modal {
-    width: 450px;
+    width: 528px;
   }
 }
 .backdrop__main-title {
@@ -980,6 +1049,11 @@ a {
     justify-content: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 50px;
+  }
+}
 .filter__item:not(:last-child) {
   margin: 0px 8px 15px 0px;
 }
@@ -1000,6 +1074,7 @@ a {
   transition-property: box-shadow, height;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .card {
@@ -1020,8 +1095,7 @@ a {
 }
 .card__img {
   display: block;
-  max-width: 100%;
-  width: inherit;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .card__img {
