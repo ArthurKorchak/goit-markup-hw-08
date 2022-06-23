@@ -1095,17 +1095,7 @@ a {
 }
 .card__img {
   display: block;
-  max-width: 450px;
-}
-@media screen and (min-width: 768px) {
-  .card__img {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .card__img {
-    width: 370px;
-  }
+  max-width: 100%;
 }
 .card__overlay {
   display: flex;
