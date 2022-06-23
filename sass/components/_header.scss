@@ -59,6 +59,7 @@
     &__social {
         display: flex;
         flex-wrap: wrap;
+        max-width: calc(100% - 40px);
     }
 
     &__link--current::after {
