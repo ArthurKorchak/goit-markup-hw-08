@@ -23,9 +23,15 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
+    
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+    }
 }
 
 h3 {
@@ -41,6 +47,10 @@ ul {
 
 .section {
     padding: 60px 0px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0px;
+    }
 }
 
 .container {
