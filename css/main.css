@@ -689,9 +689,11 @@ a {
 
 .footer {
   background-color: var(--background-2-color);
+  text-align: center;
+  padding: 60px 0;
 }
 .footer__wrapper {
-  padding: 60px 15px;
+  padding: 0 15px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -699,12 +701,12 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 60px 89px 60px 76px;
+    padding: 0 89px 0 76px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__wrapper {
-    padding: 60px 15px;
+    padding: 0 15px;
   }
 }
 .footer__nav-logo {
@@ -1074,7 +1076,7 @@ a {
     justify-content: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .filter {
     margin-bottom: 50px;
   }
